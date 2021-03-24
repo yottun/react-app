@@ -1,0 +1,74 @@
+// ==================================
+// リセット
+// ==================================
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ==================================
+// カラー
+// ==================================
+$color_black: #111;
+$color_gray_d: #555;//25%
+$color_gray: #888;//50%
+$color_gray_l: #bbb;//75%
+$color_white: #fafafa;
+// ==================================
+// 共通
+// ==================================
+body {
+    background-color: $color_white;
+    color: $color_black;
+    line-height: 2;//好み、デフォルトは1.5
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+p {
+    margin-bottom: 1em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: $color_black;
+}
+.wrap {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px 100px;
+    list-style: none;
+}
+// ==================================
+// パーツ
+// ==================================
+.Heading_1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+// ==================================
+// リスト
+// ==================================
+
+
+// ==================================
+// 記事ページ
+// ==================================
+article {
+    ul,
+    ol {
+        width: 100%;
+        padding-left: 1.5em;
+        margin-bottom: 1em;
+        li {
+            ul,
+            ol {
+                padding-bottom: 0.5em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

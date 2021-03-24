@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import "base";
+
+// ==================================
+// モジュールページ
+// ==================================
+ul.color {
+    padding: 100px;
+    li {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        &:nth-child(1) {
+            background: $color_white;
+            border: solid 1px $color_gray;
+        }
+        &:nth-child(2) {
+            background: $color_gray_l;
+        }
+        &:nth-child(3) {
+            background: $color_gray;
+        }
+        &:nth-child(4) {
+            background: $color_gray_d;
+        }
+        &:nth-child(5) {
+            background: $color_black;
+        }
+    }
+}
+
+ul.font {
+    padding: 100px;
+    li {
+        &:nth-child(1) {
+            font-weight: 100;
+        }
+        &:nth-child(2) {
+            font-weight: 300;
+        }
+        &:nth-child(3) {
+            font-weight: 400;
+        }
+        &:nth-child(4) {
+            font-weight: 500;
+        }
+        &:nth-child(5) {
+            font-weight: 700;
+        }
+        &:nth-child(6) {
+            font-weight: 900;
+        }
+    }
+}
+
+// ==================================
+// ヘッダー
+// ==================================
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    .logo {
+        height: 40px;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                list-style: none;
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    padding: 0.4em;
+                    font-size: 15px;
+                    svg {
+                        height: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==================================
+// フッター
+// ==================================
+footer {
+    ul.sns {
+        display: flex;
+        justify-content: center;
+        li {
+            list-style: none;
+            a {
+                padding: 5px;
+                svg {
+                    width: 30px;
+                    fill: $color_gray_d;
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+        color: $color_gray_d;
+    }
+}
+
+// ==================================
+// Booklist
+// ==================================
+
+.page_book {
+    margin: auto;
+    ul {
+        list-style: none;
+        padding-bottom: 20px;
+        border-bottom: solid 1px #333;
+        li {
+        }
+    }
+    div {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        ul {
+            width: 100%;
+            height: auto;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 0;
+            li {
+                padding: 10px;
+                display: flex;
+                width: 33.3%;
+                height: auto;
+                img {
+                }
+                a {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
